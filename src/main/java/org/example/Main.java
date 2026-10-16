@@ -53,6 +53,19 @@ public class Main {
         System.out.println("Java → " + reverse("Java"));
         System.out.println("a → " + reverse("a"));
         System.out.println("пусто → [" + reverse("") + "]");
+
+        User user1 = new User("Ivan", 30, "ivan@example.com");
+
+        System.out.println("Пользователь: " + user1.name + ", возраст: " + user1.age + ", email: " + user1.email);
+
+        User user2 = new User("Anna", 25, "anna@example.com");
+
+        System.out.println("Пользователь: " + user2.name + ", возраст: " + user2.age + ", email: " + user2.email);
+
+        System.out.println("Имя user1 осталось: " + user1.name);
+
+        user1.printInfo();
+        System.out.println(user2.greeting());
     }
 
     static int sum(int a, int b) {
